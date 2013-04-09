@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+
+.nm-webcontact-box span{
+	display:block;
+}
+
+/* the uploader wrapper */
+#nm-uploader-area{
+	border: #ccc 1px dashed;
+	padding: 25px 0;	
+}
+
+/* centering the upload button */
+#wrapper-uploadify-button{
+	background: url('images/upload-button-bg.png') 0 0 no-repeat;
+	margin: 0 auto;
+	text-align: left;
+	color: #fff;
+	width: 180px;
+	height: 40px;
+	/* background-position: 17px 0px; */
+	padding-left: 5px;
+}
+
+#wrapper-uploadify-button:hover{
+	background: url('images/upload-button-bg-over.png') 0 0 no-repeat;
+	/* background-position: 17px 0px; */
+	padding-left: 5px;
+}
