@@ -13,29 +13,33 @@ This plugin is great tool to allow users to upload file with contact form. File 
 == Description ==
 
 There are many Contact Form plugin already exists in WP repository. But This plugin is has Unique Feature that is AWESOME File uploader control. Users can submit files using best file uploader tool and other features:
-* Awesome Progressbar
-* Show images/file thumbs
-* Set images thumbs size
-* Ajax based form submit
-* Validation control
-* Sanitized all input fields using WP standards
-* Block spammers, using WP NONCE
-* Create unlimited Forms with following fields
-* Text, Email, Textarea, Select, Checkbox
-* Set fields as required optionally
+<ul>
+<li>Awesome Progressbar</li>
+<li>Show images/file thumbs</li>
+<li>Set images thumbs size</li>
+<li>Ajax based form submit</li>
+<li>Validation control</li>
+<li>Sanitized all input fields using WP standards</li>
+<li>Block spammers, using WP NONCE</li>
+<li>Create unlimited Forms with following fields</li>
+<li>Text, Email, Textarea, Select, Checkbox</li>
+<li>Set fields as required optionally</li>
+</ul>
 
 = PRO Features =
 On top above Basic Features, this plugin has PRO version with more Awesome features like:
-* HTML-5 based Uploader script
-* Set upload file as Required
-* Save all enteries as Custom Post Type
-* Date picker field input
-* Secure uploaded files from unauthorised download
-* Allow multiple file upload
-* Set validations message for each fields (Awesome)
-* Access to N-Media Forum for best Support
-* Set unlimited Receiver’s emails
-* Set Reply to email
+<ul>
+<li>HTML-5 based Uploader script</li>
+<li>Set upload file as Required</li>
+<li>Save all enteries as Custom Post Type</li>
+<li>Date picker field input</li>
+<li>Secure uploaded files from unauthorised download</li>
+<li>Allow multiple file upload</li>
+<li>Set validations message for each fields (Awesome)</li>
+<li>Access to N-Media Forum for best Support</li>
+<li>Set unlimited Receiver’s emails</li>
+<li>Set Reply to email</li>
+<ul>
 
 = Demo =
 [Demo of this plugin can be seen here](http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/)
