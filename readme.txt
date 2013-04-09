@@ -39,7 +39,7 @@ On top above Basic Features, this plugin has PRO version with more Awesome featu
 <li>Access to N-Media Forum for best Support</li>
 <li>Set unlimited Receivers emails</li>
 <li>Set Reply to email</li>
-<ul>
+</ul>
 
 = Demo =
 [Demo of this plugin can be seen here](http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/)
