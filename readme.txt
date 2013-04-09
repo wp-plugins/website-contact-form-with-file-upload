@@ -37,7 +37,7 @@ On top above Basic Features, this plugin has PRO version with more Awesome featu
 <li>Allow multiple file upload</li>
 <li>Set validations message for each fields (Awesome)</li>
 <li>Access to N-Media Forum for best Support</li>
-<li>Set unlimited Receiver’s emails</li>
+<li>Set unlimited Receivers emails</li>
 <li>Set Reply to email</li>
 <ul>
 
