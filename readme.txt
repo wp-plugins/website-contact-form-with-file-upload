@@ -28,6 +28,7 @@ There are many Contact Form plugin already exists in WP repository. But This plu
 
 = PRO Features =
 On top above Basic Features, this plugin has PRO version with more Awesome features like:
+
 <ul>
 <li>HTML-5 based Uploader script</li>
 <li>Set upload file as Required</li>
