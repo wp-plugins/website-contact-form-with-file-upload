@@ -71,7 +71,7 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 2. Creating new Form meta group
 3. Showing existing Forms with Shortcode
 4. Finally, a front-end view of form with Awesome File Uploader
-5. Showing filled Form with an Uploaded File.
+5. Showing filled Form with an Uploaded File
 
 == Changelog ==
 
