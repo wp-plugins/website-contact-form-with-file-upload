@@ -79,6 +79,7 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 * I am just born
 = 1.1 =
 * some files were missing in first release, it is fixed now
+* validation error fixed for 'Email' type field
 
 
 == Upgrade notice ==
@@ -87,3 +88,4 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 I am just born
 = 1.1 =
 some files were missing in first release, it is fixed now
+validation error fixed for 'Email' type field
