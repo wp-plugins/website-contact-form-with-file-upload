@@ -6,7 +6,7 @@
  * [1]
  */
 
-$plugin_dir = 'nm-wp-contact-form-v1';
+$plugin_dir = 'website-contact-form-with-file-upload';
 
 $plugin_meta		= array('name'			=> 'NM Website Contact',
 							'shortname'		=> 'nm_webcontact',

@@ -52,7 +52,7 @@ function validate_data(form) {
 
 	var err_flag = true;
 
-	jQuery(form).find('input, select, textarea, checkbox').each(
+	jQuery(form).find('input, select, textarea, checkbox, email').each(
 			function() {
 
 				var child = jQuery(this);
@@ -77,6 +77,7 @@ function validate_data(form) {
 						});
 						child.parent().find('span').html(child.data('message'))
 								.css('color', 'red');
+						err_flag = false;
 					}else{
 						child.parent().css({
 							'border' : '',
