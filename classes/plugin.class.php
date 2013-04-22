@@ -364,8 +364,8 @@ class NM_WP_ContactForm extends NM_Framwork_V1{
 		
 		$from_email 		= isset($_REQUEST['_from_email']) ? $_REQUEST['_from_email'] : $admin_email;
 		$from_name  		= isset($_REQUEST['_from_name']) ? $_REQUEST['_from_name'] : $blog_name;
-		$receiver_emails 	= isset($_REQUEST['_receiver_emails']) ? $_REQUEST['_receiver_emails'] : $admin_email;
-		$reply_to			= isset($_REQUEST['_reply_to']) ? $_REQUEST['_reply_to'] : $admin_email;
+		$receiver_emails 	= $admin_email;
+		$reply_to			= $admin_email;
 		
 		$headers[] = "From: $from_name <$from_email >";
 		$headers[] = "Reply-To: $reply_to";
@@ -430,7 +430,7 @@ class NM_WP_ContactForm extends NM_Framwork_V1{
 			if(move_uploaded_file($tempFile,$targetFile)){
 
 				if (($type == "gif") || ($type == "jpeg") || ($type == "png") || ($type == "pjpeg") || ($type == "jpg") )
-					$this -> make_thumb($targetFile, $targetPath.'thumbs/'.$new_filename, $thumb_size, $type);
+					$this -> create_thumb($targetPath, $new_filename, $thumb_size);
 
 				$response['status']		= 'uploaded';
 				$response['filename']	= $new_filename;
@@ -544,44 +544,22 @@ class NM_WP_ContactForm extends NM_Framwork_V1{
 	}
 
 	/*
-	 * making image thumb
+	 * creating thumb using WideImage Library
+	* Since 21 April, 2013
 	*/
-	function make_thumb($src, $dest, $desired_width, $file_type) {
+	function create_thumb($dest, $image_name, $thumb_size){
 
-		$source_image = NULL;
-		
-		/* read the source image */
-		if($file_type == "jpeg" or $file_type =="jpg"){
+		$wide_image_file = $this->plugin_meta['path'].'/lib/wide-image/WideImage.php';
 
-			$source_image = imagecreatefromjpeg($src);
-		}elseif ($file_type == "gif"){
-			$source_image = imagecreatefromgif($src);
-		}elseif ($file_type == "png"){
-			$source_image = imagecreatefrompng($src);
-		}
+		if (file_exists($wide_image_file))
+			include $wide_image_file;
+		else
+			die('File not found'.$wide_image_file);
 
-		$width = imagesx($source_image);
-		$height = imagesy($source_image);
+		$image = WideImage::load($dest . $image_name);
 
-		/* find the "desired height" of this thumbnail, relative to the desired width  */
-		$desired_height = floor($height * ($desired_width / $width));
-
-		/* create a new, "virtual" image */
-		$virtual_image = imagecreatetruecolor($desired_width, $desired_height);
-
-		/* copy source image at a resized size */
-		imagecopyresampled($virtual_image, $source_image, 0, 0, 0, 0, $desired_width, $desired_height, $width, $height);
-
-		/* create the physical thumbnail image to its destination */
-		if($file_type == "jpeg" or $file_type =="jpg"){
-			imagejpeg($virtual_image, $dest);
-		}elseif ($file_type == "gif"){
-			imagegif($virtual_image, $dest);
-		}elseif ($file_type == "png"){
-			imagepng($virtual_image, $dest);
-		}
-		
-
+		$dest_file = $dest.'thumbs/'.$image_name;
+		$result = $image -> resize($thumb_size) -> saveToFile($dest_file);
 	}
 	
 	
