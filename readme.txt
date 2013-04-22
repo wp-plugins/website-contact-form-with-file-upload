@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: website contact form, upload file, submit file, send file, attach file
 Requires at least: 3.3
 Tested up to: 3.5.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -77,8 +77,13 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 
 = 1.0 =
 * I am just born
+= 1.1 =
+* some files were missing in first release, it is fixed now
+
 
 == Upgrade notice ==
 
 = 1.0 =
 I am just born
+= 1.1 =
+some files were missing in first release, it is fixed now
