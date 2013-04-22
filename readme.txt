@@ -80,6 +80,7 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 = 1.1 =
 * some files were missing in first release, it is fixed now
 * validation error fixed for 'Email' type field
+* better thumbs support for png and gif as well
 
 
 == Upgrade notice ==
@@ -89,3 +90,4 @@ I am just born
 = 1.1 =
 some files were missing in first release, it is fixed now
 validation error fixed for 'Email' type field
+better thumbs support for png and gif as well
