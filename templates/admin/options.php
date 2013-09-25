@@ -14,14 +14,6 @@ $meatGeneral = array('thumb-size'	=> array(	'label'		=> __('Images thumb size', 
 																								'default'		=> '',
 																								'help'			=> __('', $this->plugin_meta['shortname'])
 																								),
-					'save-forms'		=>  array(	'label'		=> __('Do you want to save forms?', $this->plugin_meta['shortname']),
-							'desc'		=> __('Do you want to save every form as Custom post type: <code>nm-forms</code>?', $this->plugin_meta['shortname']),
-							'id'			=> $this->plugin_meta['shortname'].'_save_forms',
-							'type'			=> 'checkbox',
-							'default'		=> '',
-							'options'		=> array('yes'	=> 'Yes', 'No'	=> 'No'),
-							'help'			=> __('', $this->plugin_meta['shortname'])
-					),
 					);
 					
 
@@ -39,6 +31,10 @@ $meatDialog = array('message-sent'	=> array(	'label'		=> __('Message Sent messag
 		'default'		=> '',
 		'help'			=> ''),);
 
+$meatPro = array('pro-feature'	=> array(	'desc'		=> $proFeatures,
+		'type'		=> 'file',
+		'id'		=> 'get-pro.php',
+),);
 
 $this -> the_options = array('general-settings'	=> array(	'name'		=> __('Basic Setting', $this->plugin_meta['shortname']),
 														'type'	=> 'tab',
@@ -52,6 +48,14 @@ $this -> the_options = array('general-settings'	=> array(	'name'		=> __('Basic S
 								'meat'	=> $meatDialog,
 								
 						),
+						
+		'pro-features'	=> array(	'name'		=> __('Need more? Get PRO', $this->plugin_meta['shortname']),
+				'type'	=> 'tab',
+				'desc'	=> __('Following features are only available in PRO version', $this->plugin_meta['shortname']),
+				'meat'	=> $meatPro,
+				'class'	=> 'pro',
+		
+		),
 	
 					);
 

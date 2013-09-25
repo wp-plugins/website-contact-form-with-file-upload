@@ -32,7 +32,7 @@ function get_plugin_meta(){
  */
 function nm_webcontact_pro(){
 	
-	echo '<a href="#">'.__('It is PRO', 'nm_webcontact').'</a>';
+	return '<a class="nm_pro" href="#">'.__('It is PRO', 'nm_webcontact').'</a>';
 }
 
 

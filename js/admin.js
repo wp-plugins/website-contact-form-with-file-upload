@@ -1,5 +1,8 @@
 jQuery(function($) {
 
+	$('.etabs li:last, li.pro').css({background: '#D44937'});
+	$('.nm_pro').css({'background':'#D44937','color':'#fff','padding':'0.2rem','text-decoration':'none'});
+	
 	// ================== new meta form creator ===================
 
 	var meta_removed;
@@ -30,8 +33,14 @@ jQuery(function($) {
 	$("#form-meta-setting ul").sortable({
 		revert : true,
 		stop : function(event, ui) {
-			// console.log(ui);
-
+			
+			//console.log($(ui.item).attr('data-for'));
+			if($(ui.item).attr('data-for') === 'pro'){
+				alert('It is Pro Feature');
+				$(ui.item).remove();
+			}
+				
+			
 			// only attach click event when dropped from right panel
 			if (ui.originalPosition.left > 20) {
 				$(ui.item).find(".ui-icon-carat-2-n-s").click(function(e) {
@@ -213,6 +222,7 @@ function save_form_meta(form_id) {
 		do_action = 'nm_webcontact_save_form_meta';
 	}
 	
+	
 	var server_data = {
 		action 			: do_action,
 		form_id 		: jQuery('input[name="form_id"]').val(),
@@ -226,9 +236,9 @@ function save_form_meta(form_id) {
 		success_message : jQuery('input[name="success_message"]').val(),
 		error_message 	: jQuery('input[name="error_message"]').val(),
 		send_file_as 	: jQuery('input:radio[name="send_file_as"]:checked').val(),
-		section_slides 	: jQuery('input:checkbox[name="section_slides"]:checked').val(),
-		aviary_api_key 	: jQuery('input[name="aviary_api_key"]').val(),
-		form_style		: jQuery('textarea[name="form_style"]').val(),
+		section_slides 	: '',
+		aviary_api_key 	: '',
+		form_style		: '',
 		
 		form_meta : form_meta_values
 	}

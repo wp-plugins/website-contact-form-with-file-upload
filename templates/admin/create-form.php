@@ -58,6 +58,20 @@ $text_settings = array (
 		) 
 );
 
+$hidden_settings = array (
+		
+		'data_name' => array (
+				'type' => 'text',
+				'title' => __ ( 'Data name', $nmcontact->plugin_meta ['shortname'] ),
+				'desc' => __ ( 'REQUIRED: The identification name of this field, that you can insert into body email configuration. Note:Use only lowercase characters and underscores.', $nmcontact->plugin_meta ['shortname'] )
+		),
+		'field_value' => array (
+				'type' => 'text',
+				'title' => __ ( 'Field value', $nmcontact->plugin_meta ['shortname'] ),
+				'desc' => __ ( 'you can pre-set the value of this hidden input.', $nmcontact->plugin_meta ['shortname'] )
+		),
+);
+
 $date_settings = array (
 		'title' => array (
 				'type' => 'text',
@@ -151,8 +165,9 @@ $email_settings = array (
 		'send_email' => array (
 				'type' => 'checkbox',
 				'title' => __ ( 'Send email', $nmcontact->plugin_meta ['shortname'] ),
-				'desc' => __ ( 'Select this if you want user get this form.', $nmcontact->plugin_meta ['shortname'] ) 
-		) 
+				'desc' => __ ( 'Select this if you want user get this form.', $nmcontact->plugin_meta ['shortname'] ),
+				'for'	=> 'pro'
+		)
 )
 ;
 
@@ -208,13 +223,16 @@ $check_settings = array (
 		'min_checked' => array (
 				'type' => 'text',
 				'title' => __ ( 'Min. Checked option(s)', $nmcontact->plugin_meta ['shortname'] ),
-				'desc' => __ ( 'How many options can be checked by user e.g: 2. Leave blank for default.', $nmcontact->plugin_meta ['shortname'] ) 
+				'desc' => __ ( 'How many options can be checked by user e.g: 2. Leave blank for default.', $nmcontact->plugin_meta ['shortname'] ),
+				'for'	=> 'pro',
 		),
+		
 		
 		'max_checked' => array (
 				'type' => 'text',
 				'title' => __ ( 'Max. Checked option(s)', $nmcontact->plugin_meta ['shortname'] ),
-				'desc' => __ ( 'How many options can be checked by user e.g: 3. Leave blank for default.', $nmcontact->plugin_meta ['shortname'] ) 
+				'desc' => __ ( 'How many options can be checked by user e.g: 3. Leave blank for default.', $nmcontact->plugin_meta ['shortname'] ),
+				'for'	=> 'pro',
 		) 
 );
 
@@ -296,8 +314,10 @@ $file_settings = array (
 		'required' => array (
 				'type' => 'checkbox',
 				'title' => __ ( 'Required', $nmcontact->plugin_meta ['shortname'] ),
-				'desc' => __ ( 'Select this if it must be required.', $nmcontact->plugin_meta ['shortname'] ) 
+				'desc' => __ ( 'Select this if it must be required.', $nmcontact->plugin_meta ['shortname'] ),
+				'for'	=> 'pro',
 		),
+		
 		
 		'class' => array (
 				'type' => 'text',
@@ -324,7 +344,8 @@ $file_settings = array (
 		'files_allowed' => array (
 				'type' => 'text',
 				'title' => __ ( 'Files allowed', $nmcontact->plugin_meta ['shortname'] ),
-				'desc' => __ ( 'Type number of files allowed per upload by user, e.g: 3', $nmcontact->plugin_meta ['shortname'] ) 
+				'desc' => __ ( 'Type number of files allowed per upload by user, e.g: 3', $nmcontact->plugin_meta ['shortname'] ),
+				'for'	=> 'pro',
 		),
 		'file_types' => array (
 				'type' => 'text',
@@ -341,7 +362,8 @@ $file_settings = array (
 		'photo_editing' => array (
 				'type' => 'checkbox',
 				'title' => __ ( 'Enable photo editing', $nmcontact->plugin_meta ['shortname'] ),
-				'desc' => __ ( 'Allow users to edit photos by Aviary API, make sure that Aviary API Key is set in previous tab.', $nmcontact->plugin_meta ['shortname'] ) 
+				'desc' => __ ( 'Allow users to edit photos by Aviary API, make sure that Aviary API Key is set in previous tab.', $nmcontact->plugin_meta ['shortname'] ),
+				'for'	=> 'pro',
 		),
 		
 		'editing_tools' => array (
@@ -368,7 +390,8 @@ $file_settings = array (
 						'redeye' => 'Red-Eye',
 						'whiten' => 'Whiten teeth',
 						'blemish' => 'Remove skin blemishes' 
-				) 
+				),
+				'for'	=> 'pro',
 		) 
 );
 
@@ -403,21 +426,31 @@ $types = array (
 				'desc' => __ ( 'radio buttons', $nmcontact->plugin_meta ['shortname'] ),
 				'settings' => $select_radio_settings 
 		),
-		'date' => array (
-				'title' => __ ( 'Date', $nmcontact->plugin_meta ['shortname'] ),
-				'desc' => __ ( 'date', $nmcontact->plugin_meta ['shortname'] ),
-				'settings' => $date_settings 
+		'hidden' => array (
+				'title' => __ ( 'Hidden', $nmcontact->plugin_meta ['shortname'] ),
+				'desc' => __ ( 'Hidden inputs can be bet', $nmcontact->plugin_meta ['shortname'] ),
+				'settings' => $hidden_settings
 		),
+		
 		'file' => array (
 				'title' => __ ( 'File upload', $nmcontact->plugin_meta ['shortname'] ),
 				'desc' => __ ( 'file uploader', $nmcontact->plugin_meta ['shortname'] ),
-				'settings' => $file_settings 
+				'settings' => $file_settings
 		),
+		
+		'date' => array (
+				'title' => __ ( 'Date', $nmcontact->plugin_meta ['shortname'] ),
+				'desc' => __ ( 'date', $nmcontact->plugin_meta ['shortname'] ),
+				'settings' => $date_settings,
+				'for'	=> 'pro',
+		),
+		
 		'section' => array (
 				'title' => __ ( 'Section (Heading)', $nmcontact->plugin_meta ['shortname'] ),
 				'desc' => __ ( 'file uploader', $nmcontact->plugin_meta ['shortname'] ),
-				'settings' => $section_settings 
-		) 
+				'settings' => $section_settings,
+				'for'	=> 'pro',
+		)
 );
 
 if (isset ( $_REQUEST ['form_id'] ) && $_REQUEST ['form_id'] != '') {
@@ -471,7 +504,7 @@ if (isset ( $_REQUEST ['form_id'] ) && $_REQUEST ['form_id'] != '') {
 			<tr>
 				<td class="headings"><?php _e('Receiver(s)', $nmcontact -> plugin_meta['shortname'])?></td>
 				<td><input type="text" name="receiver_emails"
-					value="<?php echo $receiver_emails?>" /> <br />
+					value="<?php echo get_bloginfo ( 'admin_email' )?>" disabled="disabled"/> <?php echo nm_webcontact_pro()?><br />
 					<p class="s-font"><?php _e('Define the emails used (separeted by comma) to receive emails.', $nmcontact -> plugin_meta['shortname'])?></p></td>
 			</tr>
 			<tr>
@@ -535,7 +568,7 @@ if (isset ( $_REQUEST ['form_id'] ) && $_REQUEST ['form_id'] != '') {
 			
 			<tr>
 				<td class="headings"><?php _e('Slide sections using jquery?', $nmcontact->plugin_meta['shortname'])?></td>
-				<td><input type="checkbox" id="section_slides" name="section_slides" <?php echo $section_slides?> /><br>
+				<td><input type="checkbox" disabled="disabled" id="section_slides" name="section_slides" <?php echo $section_slides?> /> <?php echo nm_webcontact_pro()?><br>
 				<p class="s-font"><?php _e('Not all section will be shown at once, it add a nice sliding effect.', $nmcontact -> plugin_meta['shortname'])?></p>
 				</td>
 				
@@ -549,13 +582,13 @@ if (isset ( $_REQUEST ['form_id'] ) && $_REQUEST ['form_id'] != '') {
 				
 				<?php if ($nmcontact -> is_aviary_installed()) {?>
 				<input type="text" name="aviary_api_key"
-					value="<?php echo $aviary_api_key?>" /> <br />
+					value="<?php echo $aviary_api_key?>" disabled="disabled" /> <?php echo nm_webcontact_pro()?><br />
 					<p class="s-font"><?php _e('Enter Aviary API Key.', $nmcontact -> plugin_meta['shortname'])?>
 					<br><?php _e('You need to get your API key from Aviary to use this. It is free as long as you need paid features', $nmcontact -> plugin_meta['shortname'])?></p>
 				<?php }else{?>
 					<p class="s-font">
-						<a href="#" class="button-primary" target="_blank"><?php _e('Enable this Add-on', $nmcontact -> plugin_meta['shortname'])?></a>
 						<a href="#" class="button-primary" target="_blank"><?php _e('See Demo', $nmcontact -> plugin_meta['shortname'])?></a>
+						<?php echo nm_webcontact_pro()?>
 					</p>
 					
 					<?php }?>
@@ -564,8 +597,8 @@ if (isset ( $_REQUEST ['form_id'] ) && $_REQUEST ['form_id'] != '') {
 			</tr>
 			
 			<tr>
-				<td class="headings"><?php _e('Form styling/css', $nmcontact -> plugin_meta['shortname'])?></td>
-				<td><textarea rows="7" cols="25" name="form_style"><?php echo $form_style?></textarea> <br />
+				<td class="headings"><?php _e('Form styling/css', $nmcontact -> plugin_meta['shortname'])?> <?php echo nm_webcontact_pro()?></td>
+				<td><textarea disabled="disabled" rows="7" cols="25" name="form_style"></textarea><br />
 					<p class="s-font"><?php _e('Form styling/css.', $nmcontact -> plugin_meta['shortname'])?></p></td>
 			</tr> 
 		</table>
@@ -583,7 +616,7 @@ if (isset ( $_REQUEST ['form_id'] ) && $_REQUEST ['form_id'] != '') {
 		<?php
 		foreach ( $types as $type => $data ) {
 			
-			echo '<li class="input-type-item" data-inputtype="' . $type . '">';
+			echo '<li class="input-type-item '.$data['for'].'" data-inputtype="' . $type . '" data-for="' . $data['for'] . '">';
 			echo '<div><h3><span class="top-heading-text">' . $data ['title'] . '</span>';
 			echo '<span class="top-heading-icons ui-icon ui-icon-arrow-4"></span>';
 			echo '<span class="top-heading-icons ui-icon-placehorder"></span>';
@@ -643,11 +676,16 @@ function render_input_settings($settings, $values = '') {
 		$setting_html .= '<td class="table-column-title">' . $data ['title'] . '</td>';
 		
 		if ($values)
-			$setting_html .= '<td class="table-column-input" data-type="' . $data ['type'] . '" data-name="' . $meta_type . '">' . render_input_types ( $data ['type'], $meta_type, $values [$meta_type], $data ['options'] ) . '</td>';
+			$setting_html .= '<td class="table-column-input" data-type="' . $data ['type'] . '" data-name="' . $meta_type . '">' . render_input_types ( $data ['type'], $meta_type, $values [$meta_type], $data ['options'], $data['for'] ) . '</td>';
 		else
-			$setting_html .= '<td class="table-column-input" data-type="' . $data ['type'] . '" data-name="' . $meta_type . '">' . render_input_types ( $data ['type'], $meta_type, null, $data ['options'] ) . '</td>';
+			$setting_html .= '<td class="table-column-input" data-type="' . $data ['type'] . '" data-name="' . $meta_type . '">' . render_input_types ( $data ['type'], $meta_type, null, $data ['options'], $data['for'] ) . '</td>';
 		
-		$setting_html .= '<td class="table-column-desc">' . $data ['desc'] . '</td>';
+		if ($data['for'] == 'pro') {
+			$setting_html .= '<td class="table-column-desc">' . $data ['desc'] . nm_webcontact_pro().'</td>';
+		}else{
+			$setting_html .= '<td class="table-column-desc">' . $data ['desc'] . '</td>';
+		}
+		
 		$setting_html .= '</tr>';
 	}
 	
@@ -659,20 +697,23 @@ function render_input_settings($settings, $values = '') {
 /*
  * this function is rendring input field for settings
  */
-function render_input_types($type, $name, $value = '', $options = '') {
+function render_input_types($type, $name, $value = '', $options = '', $for = 'free') {
 	$html_input = '';
+	
+	$disabled = ($for == 'pro') ? 'disabled="disabled"' : '';
+	
 	switch ($type) {
 		
 		case 'text' :
-			$html_input .= '<input type="text" name="' . $name . '" value="' . $value . '">';
+			$html_input .= '<input type="text" name="' . $name . '" value="' . $value . '" '.$disabled.'>';
 			break;
 		
 		case 'textarea' :
-			$html_input .= '<textarea name="' . $name . '">' . $value . '</textarea>';
+			$html_input .= '<textarea name="' . $name . '" '.$disabled.'>' . $value . '</textarea>';
 			break;
 		
 		case 'select' :
-			$html_input .= '<select name="' . $name . '">';
+			$html_input .= '<select name="' . $name . '" '.$disabled.'>';
 			foreach ( $options as $key => $val ) {
 				$selected = ($key == $value) ? 'selected="selected"' : '';
 				$html_input .= '<option value="' . $key . '" ' . $selected . '>' . $val . '</option>';
@@ -694,12 +735,12 @@ function render_input_types($type, $name, $value = '', $options = '') {
 						}
 					}
 					// $html_input .= '<option value="' . $key . '" ' . $selected . '>' . $val . '</option>';
-					$html_input .= '<input type="checkbox" value="' . $key . '" name="' . $name . '[]" ' . $checked . '> ' . $val . '<br>';
+					$html_input .= '<input '.$disabled.' type="checkbox" value="' . $key . '" name="' . $name . '[]" ' . $checked . '> ' . $val . '<br>';
 				}
 			} else {
 				if ($value)
 					$checked = 'checked = "checked"';
-				$html_input .= '<input type="checkbox" name="' . $name . '" ' . $checked . '>';
+				$html_input .= '<input '.$disabled.' type="checkbox" name="' . $name . '" ' . $checked . '>';
 			}
 			break;
 	}

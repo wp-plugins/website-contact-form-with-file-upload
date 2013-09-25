@@ -21,11 +21,9 @@ $sendUpdate = '';
 </h2>
 <div id="tab-container" class="tab-container">
 	<ul class='etabs'>
-		<?php foreach($this -> the_options as $id => $option){
-			
-			?>
+		<?php foreach($this -> the_options as $id => $option){	?>
 
-		<li class='tab'><a href="#<?php echo $id?>"><?php echo $option['name']?>
+		<li class="tab <?php echo $option['class']?>"><a href="#<?php echo $id?>"><?php echo $option['name']?>
 		</a></li>
 
 		<?php }?>

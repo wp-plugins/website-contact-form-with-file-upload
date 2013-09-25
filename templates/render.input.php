@@ -85,26 +85,34 @@ echo $single_form -> form_style;
 
 			switch($type)
 			{
-				case 'text':
+				case 'hidden':
 
-					$value = stripslashes( $_POST[$name] );
-					?>
+				?>
 
-		<p style="width: <?php echo $the_width?>; margin-right: <?php echo $the_margin?>">
-			<label for="<?php echo $name?>"><?php echo $field_label?> </label> <br />
-			<input type="text" name="<?php echo $name?>" id="<?php echo $name?>"
-				value="<?php echo $value?>" data-type="<?php echo $type?>"
-				data-req="<?php echo $meta['required']?>"
-				data-message="<?php echo stripslashes( $meta['error_message'] )?>" />
-
-			<span class="errors"></span>
-			<!-- for validation message -->
-		</p>
+		<input type="hidden" name="<?php echo $name?>" id="<?php echo $name?>"
+				value="<?php echo $meta['field_value']?>" data-type="<?php echo $type?>" />
 
 		<?php
 		break;
-
-case 'date':
+		
+		case 'text':
+		
+			?>
+		
+				<p style="width: <?php echo $the_width?>; margin-right: <?php echo $the_margin?>">
+					<label for="<?php echo $name?>"><?php echo $field_label?> </label> <br />
+					<input type="text" name="<?php echo $name?>" id="<?php echo $name?>"
+						value="<?php echo $value?>" data-type="<?php echo $type?>"
+						data-req="<?php echo $meta['required']?>"
+						data-message="<?php echo stripslashes( $meta['error_message'] )?>" />
+		
+					<span class="errors"></span>
+					<!-- for validation message -->
+				</p>
+		
+		<?php
+		break;
+		case 'date':
 	?>
 
 		<p style="width: <?php echo $the_width?>; margin-right: <?php echo $the_margin?>">
@@ -301,13 +309,12 @@ case 'file':
 					class="nm-uploader-area">
 					<div id="wrapper-uploadifive-button">
 						<input id="<?php echo $name?>"
-							name="<?php echo $name?>" type="file" />
+							name="<?php echo $name?>" data-req="<?php echo $meta['required']?>"
+						data-message="<?php echo stripslashes( $meta['error_message'] )?>" type="file" />
 					</div>
 
 					<input type="hidden" id="files_<?php echo $name?>"
-						name="files_<?php echo $name?>"
-						data-req="<?php echo $meta['required']?>"
-						data-message="<?php echo stripslashes( $meta['error_message'] )?>">
+						name="files_<?php echo $name?>">
 					<span id="upload-response-<?php echo $name?>"></span>
 
 					<p id="uploaded_files-<?php echo $name?>"
@@ -404,7 +411,7 @@ nm_webcontact_vars.section_slides= '<?php echo $single_form -> section_slides?>'
 
 /* it is setting up Aviary API */
 
-if('<?php echo $single_form -> aviary_api_key?>' != null){
+if('<?php echo $single_form -> aviary_api_key?>' != ''){
 	var featherEditor = new Aviary.Feather({
 	       apiKey			: '<?php echo $single_form -> aviary_api_key?>',
 	       apiVersion		: 3,

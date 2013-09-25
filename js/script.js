@@ -142,16 +142,24 @@ function validate_data(form){
 				
 				jQuery('input:checkbox[name="'+meta['data_name']+'[]"]').parent().parent().find('span.errors').html(meta['error_message']).css('color', 'red');
 				has_error = false;
-			}else if(meta['min_checked'] != null && jQuery('input:checkbox[name="'+meta['data_name']+'[]"]:checked').length < meta['min_checked']){
+			}else if(meta['min_checked'] != '' && jQuery('input:checkbox[name="'+meta['data_name']+'[]"]:checked').length < meta['min_checked']){
 				jQuery('input:checkbox[name="'+meta['data_name']+'[]"]').parent().parent().find('span.errors').html(meta['error_message']).css('color', 'red');
 				has_error = false;
-			}else if(meta['max_checked'] != null && jQuery('input:checkbox[name="'+meta['data_name']+'[]"]:checked').length > meta['max_checked']){
+			}else if(meta['max_checked'] != '' && jQuery('input:checkbox[name="'+meta['data_name']+'[]"]:checked').length > meta['max_checked']){
 				jQuery('input:checkbox[name="'+meta['data_name']+'[]"]').parent().parent().find('span.errors').html(meta['error_message']).css('color', 'red');
 				has_error = false;
 			}else{
 				
 				jQuery('input:checkbox[name="'+meta['data_name']+'[]"]').parent().parent().find('span.errors').html('').css({'border' : '','padding' : '0'});
 				
+				}
+			}else if(type === 'file'){
+				var input_control = jQuery('#files_'+meta['data_name']);
+				if(meta['required'] === "on" && jQuery(input_control).val() === ''){
+					jQuery(input_control).parent().parent().parent().find('span.errors').html(meta['error_message']).css('color', 'red');
+					has_error = false;
+				}else{
+					jQuery(input_control).parent().parent().parent().find('span.errors').html('').css({'border' : '','padding' : '0'});
 				}
 			}
 		

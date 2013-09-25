@@ -36,7 +36,7 @@ String.prototype.trunc =
 		var file_size_limit = (file_size_limit == '') ? '100KB' : file_size_limit+'KB';
 		var button_text 	= (button_text == '') ? 'Upload Files' : button_text;
 		var types_allowed 	= (types_allowed == '') ? 'jpg,png,gif' : types_allowed;
-		var files_allowed 	= (files_allowed == '') ? '1' : files_allowed;
+		var files_allowed 	= 1;
 		var button_width 	= (button_width == '') ? 100 : button_width;
 
 		jQuery('#'+input_file_name).uploadifive(
@@ -118,7 +118,7 @@ String.prototype.trunc =
 		var file_size_limit = (file_size_limit == '') ? '100KB' : file_size_limit + 'KB';
 		var button_text = (button_text == '') ? 'Upload Files' : button_text;
 		var types_allowed = (types_allowed == '') ? 'jpg,png,gif' : types_allowed;
-		var files_allowed = (files_allowed == '') ? '1' : files_allowed;
+		var files_allowed = 1;
 		var button_width = (button_width == '') ? 100 : button_width;
 
 		jQuery('#' + input_file_name).uploadify(
@@ -126,7 +126,7 @@ String.prototype.trunc =
 					'swf' : nm_webcontact_vars.plugin_url
 							+ '/js/uploadify-v-3-1-1/uploadify.swf',
 					'uploadLimit' : files_allowed,
-					'uploader' : 	.ajaxurl,
+					'uploader' : 	nm_webcontact_vars.ajaxurl,
 					'fileSizeLimit' : file_size_limit,
 					'buttonText' : button_text,
 					'formData' : {

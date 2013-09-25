@@ -12,6 +12,10 @@ This plugin is great tool to allow users to upload file with contact form. File 
 
 == Description ==
 
+<h4>
+Version 1.3 has major updates/changes. Old form's data will not be shown, however you can set all your fields very easily using new plugin UI in backend.
+</h4>
+
 There are many Contact Form plugin already exists in WP repository. But This plugin is has Unique Feature that is AWESOME File uploader control. Users can submit files using best file uploader tool and other features:
 <ul>
 <li>Awesome Progressbar</li>
@@ -81,6 +85,11 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 * some files were missing in first release, it is fixed now
 * validation error fixed for 'Email' type field
 * better thumbs support for png and gif as well
+= 1.3 =
+* Better plugin admin UI
+* Receive email with all titles and better layout
+* 
+
 
 
 == Upgrade notice ==
