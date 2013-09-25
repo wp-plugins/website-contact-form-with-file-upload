@@ -6,13 +6,13 @@
  * [1]
  */
 
-$plugin_dir = 'nm-wp-contact-form-v3.0-pro';
+$plugin_dir = 'website-contact-form-with-file-upload';
 
 $plugin_meta		= array('name'			=> 'WebContact',
 							'shortname'		=> 'nm_webcontact',
 							'path'			=> WP_PLUGIN_DIR . DIRECTORY_SEPARATOR . $plugin_dir,
 							'url'			=> WP_PLUGIN_URL . DIRECTORY_SEPARATOR . $plugin_dir,
-							'db_version'	=> 3.0,
+							'db_version'	=> 1.3,
 							'logo'			=> WP_PLUGIN_URL . DIRECTORY_SEPARATOR . $plugin_dir . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . 'logo.png',
 							'men_position'	=> 60);
 
