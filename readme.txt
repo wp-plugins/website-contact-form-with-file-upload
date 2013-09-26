@@ -8,13 +8,14 @@ Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin is great tool to allow users to upload file with contact form. File uploader can be configured in many ways.
+This plugin is best front-end tool to allow users to upload file with contact form. File uploader can be configured in many ways.
+
+== Attention ==
+Version 1.3 has major updates/changes. Old form's data will not be shown, however you can set all your fields very easily using new plugin UI in backend.
+
 
 == Description ==
 
-<h4>
-Version 1.3 has major updates/changes. Old form's data will not be shown, however you can set all your fields very easily using new plugin UI in backend.
-</h4>
 
 There are many Contact Form plugin already exists in WP repository. But This plugin is has Unique Feature that is AWESOME File uploader control. Users can submit files using best file uploader tool and other features:
 <ul>
@@ -26,7 +27,7 @@ There are many Contact Form plugin already exists in WP repository. But This plu
 <li>Sanitized all input fields using WP standards</li>
 <li>Block spammers, using WP NONCE</li>
 <li>Create unlimited Forms with following fields</li>
-<li>Text, Email, Textarea, Select, Checkbox</li>
+<li>Text, Email, Textarea, Select, Checkbox, Radio</li>
 <li>Set fields as required optionally</li>
 </ul>
 
@@ -88,7 +89,8 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 = 1.3 =
 * Better plugin admin UI
 * Receive email with all titles and better layout
-* 
+* Responsive/Fluid layout (now FREE)
+* Radio type input added
 
 
 

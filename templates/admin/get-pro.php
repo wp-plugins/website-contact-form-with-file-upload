@@ -12,6 +12,7 @@ $proFeatures .= '<li>'.__('Add unlimited receiver\'s email', $this->plugin_meta[
 $proFeatures .= '<li>'.__('Date picker field input', $this->plugin_meta['shortname']).'</li>';
 $proFeatures .= '<li>'.__('Sections can be placed to split long forms', $this->plugin_meta['shortname']).'</li>';
 $proFeatures .= '<li>'.__('Hidden field can be embedded into form with pre-set value', $this->plugin_meta['shortname']).'</li>';
+$proFeatures .= '<li>'.__('Set Max. and Min. Checked options for checkbox', $this->plugin_meta['shortname']).'</li>';
 $proFeatures .= '<li>'.__('Add custom css for each form', $this->plugin_meta['shortname']).'</li>';
 $proFeatures .= '</ol>';
 

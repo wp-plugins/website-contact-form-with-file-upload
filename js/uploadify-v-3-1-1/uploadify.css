@@ -7,6 +7,8 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 .uploadify {
 	position: relative;
 	margin-bottom: 1em;
+	margin: 0 auto;
+	text-align: center;
 }
 .uploadify-button {
 	background-color: #000;
