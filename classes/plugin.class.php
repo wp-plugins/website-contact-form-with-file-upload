@@ -45,11 +45,8 @@ class NM_WP_ContactForm extends NM_Framwork_V1 {
 				'jquery-ui-datepicker'
 		);
 
-		if( $this -> if_browser_is_ie() )
-			$is_html5 = 0;
-		else
-			$is_html5 = 1;
-
+		$is_html5 = 0;
+		
 		/*
 		 * [3] TODO: update scripts array for custom scripts/styles
 		*/

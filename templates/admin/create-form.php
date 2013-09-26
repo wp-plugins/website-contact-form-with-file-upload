@@ -426,11 +426,6 @@ $types = array (
 				'desc' => __ ( 'radio buttons', $nmcontact->plugin_meta ['shortname'] ),
 				'settings' => $select_radio_settings 
 		),
-		'hidden' => array (
-				'title' => __ ( 'Hidden', $nmcontact->plugin_meta ['shortname'] ),
-				'desc' => __ ( 'Hidden inputs can be bet', $nmcontact->plugin_meta ['shortname'] ),
-				'settings' => $hidden_settings
-		),
 		
 		'file' => array (
 				'title' => __ ( 'File upload', $nmcontact->plugin_meta ['shortname'] ),
