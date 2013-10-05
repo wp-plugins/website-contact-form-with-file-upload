@@ -3,12 +3,16 @@ Contributors: nmedia
 Donate link: http://www.najeebmedia.com/donate/
 Tags: website contact form, upload file, submit file, send file, attach file
 Requires at least: 3.3
-Tested up to: 3.5.1
-Stable tag: 1.1
+Tested up to: 3.6.1
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin is great tool to allow users to upload file with contact form. File uploader can be configured in many ways.
+This plugin is best front-end tool to allow users to upload file with contact form. File uploader can be configured in many ways.
+
+== Attention ==
+Version 1.3 has major updates/changes. Old form's data will not be shown, however you can set all your fields very easily using new plugin UI in backend.
+
 
 == Description ==
 
@@ -22,7 +26,7 @@ There are many Contact Form plugin already exists in WP repository. But This plu
 <li>Sanitized all input fields using WP standards</li>
 <li>Block spammers, using WP NONCE</li>
 <li>Create unlimited Forms with following fields</li>
-<li>Text, Email, Textarea, Select, Checkbox</li>
+<li>Text, Email, Textarea, Select, Checkbox, Radio</li>
 <li>Set fields as required optionally</li>
 </ul>
 
@@ -44,6 +48,10 @@ On top above Basic Features, this plugin has PRO version with more Awesome featu
 
 = Demo =
 [Demo of this plugin can be seen here](http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/)
+
+= Photo Editing Add-on =
+This plugin can be turned into best front-end online photo editing tool. see online demo and detail:
+[Photo Editing Demo](http://webcontact.wordpresspoets.com/demo-of-photo-editing/)
 
 == Installation ==
 
@@ -81,6 +89,11 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 * some files were missing in first release, it is fixed now
 * validation error fixed for 'Email' type field
 * better thumbs support for png and gif as well
+= 1.3 =
+* Better drag & drop plugin admin UI
+* Responsive/Fluid layout (now FREE)
+* Receive email with all titles and better layout
+* Radio type input added
 
 
 == Upgrade notice ==
@@ -91,3 +104,8 @@ I am just born
 some files were missing in first release, it is fixed now
 validation error fixed for 'Email' type field
 better thumbs support for png and gif as well
+= 1.3 =
+Better drag & drop plugin admin UI
+Responsive/Fluid layout (now FREE)
+Receive email with all titles and better layout
+Radio type input added
