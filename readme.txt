@@ -1,7 +1,7 @@
 === N-Media Website Contact Form with File Upload ===
 Contributors: nmedia
 Donate link: http://www.najeebmedia.com/donate/
-Tags: website contact form, upload file, submit file, send file, attach file
+Tags: website contact form, upload file, submit file, send file, attach file, photo editing
 Requires at least: 3.3
 Tested up to: 3.6.1
 Stable tag: 1.3
