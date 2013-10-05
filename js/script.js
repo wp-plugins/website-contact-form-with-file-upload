@@ -94,12 +94,12 @@ function send_data(form) {
 			//console.log(resp); return false;
 			
 			if(resp.status == 'error'){
-				jQuery(form).find("#nm-sending-form").html(resp.message).css('color', 'red');
+				jQuery(form).find("#nm-sending-form").html(jQuery('input:hidden[name="_error_message"]').val()).css('color', 'red');
 			}else{
 				if(get_option('_redirect_url') != '')
 					window.location = get_option('_redirect_url');
 				else
-					alert(get_option('_message_sent'));
+					alert(jQuery('input:hidden[name="_success_message"]').val());
 				
 				jQuery(form).find("#nm-sending-form").html('');
 			}

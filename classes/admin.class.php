@@ -107,7 +107,7 @@ class NM_WP_ContactForm_Admin extends NM_WP_ContactForm {
 		$arrLocalizedVars = array (
 				'plugin_url' => $this->plugin_meta ['url'],
 				'doing' => $this->plugin_meta ['url'] . '/images/loading.gif',
-				'add_meta_counter' => 2 
+				'plugin_admin_page'	=> admin_url('admin.php?page=nm-create-form'),
 		);
 		
 		// admin end scripts
@@ -212,13 +212,17 @@ class NM_WP_ContactForm_Admin extends NM_WP_ContactForm {
 	function main_settings() {
 		$this->load_template ( 'admin/settings.php' );
 	}
+	
 	function forms_list() {
 		echo '<div class="wrap">';
 		echo '<h2>' . __ ( 'N-Media Websit Contact Form Setting', $nmcontact->plugin_shortname ) . '</h2>';
 		echo '<p>' . __ ( 'Here you can create and edit forms. These forms can be used on any pages/posts', $nmcontact->plugin_shortname ) . '</p>';
 		
-		if (isset ( $_REQUEST ['form_id'] ) && $_REQUEST ['form_id'] != NULL) {
+		if ( (isset ( $_REQUEST ['form_id'] ) && $_REQUEST ['form_id'] != NULL) || $_REQUEST['action'] == 'new') {
 			$this->load_template ( 'admin/create-form.php' );
+		}else{
+			$url_add = $this -> nm_plugin_fix_request_uri(array('action'=>'new'));
+			echo '<a class="button button-primary" href="'.$url_add.'">'.__('Add Form', $nmcontact->plugin_shortname).'</a>';
 		}
 		
 		$this->load_template ( 'admin/existing-meta.php' );

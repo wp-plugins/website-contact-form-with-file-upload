@@ -244,12 +244,16 @@ function save_form_meta(form_id) {
 	}
 		jQuery.post(ajaxurl, server_data, function(resp) {
 	
-			//console.log(resp);
+			console.log(resp);
 			jQuery("#nm-saving-form").hide();
 			if(resp.status == 'success'){
 				
 				alert(resp.message);
-				window.location.reload(true);
+				if(resp.form_id != ''){
+					window.location = nm_webcontact_vars.plugin_admin_page + '&form_id=' + resp.form_id;
+				}else{
+					window.location.reload(true);	
+				}
 			}
 			
 		}, 'json');

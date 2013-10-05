@@ -14,22 +14,15 @@ $meatGeneral = array('thumb-size'	=> array(	'label'		=> __('Images thumb size', 
 																								'default'		=> '',
 																								'help'			=> __('', $this->plugin_meta['shortname'])
 																								),
+					'filetype-error'	=> array('label'		=> __('File type not supported message', $this->plugin_meta['shortname']),
+							'desc'		=> __('This message will be shown invalid file type is selected', $this->plugin_meta['shortname']),
+							'id'			=> $this->plugin_meta['shortname'].'_filetype_error',
+							'type'			=> 'textarea',
+							'default'		=> '',
+							'help'			=> ''),
 					);
 					
 
-$meatDialog = array('message-sent'	=> array(	'label'		=> __('Message Sent message', $this->plugin_meta['shortname']),
-		'desc'		=> __('This message will be shown when message is sent', $this->plugin_meta['shortname']),
-		'id'			=> $this->plugin_meta['shortname'].'_message_sent',
-		'type'			=> 'textarea',
-		'default'		=> '',
-		'help'			=> ''),
-		
-		'filetype-error'	=> array('label'		=> __('File type not supported message', $this->plugin_meta['shortname']),
-		'desc'		=> __('This message will be shown invalid file type is selected', $this->plugin_meta['shortname']),
-		'id'			=> $this->plugin_meta['shortname'].'_filetype_error',
-		'type'			=> 'textarea',
-		'default'		=> '',
-		'help'			=> ''),);
 
 $meatPro = array('pro-feature'	=> array(	'desc'		=> $proFeatures,
 		'type'		=> 'file',
@@ -42,12 +35,6 @@ $this -> the_options = array('general-settings'	=> array(	'name'		=> __('Basic S
 														'meat'	=> $meatGeneral,
 														
 													),
-						'email-template'	=> array(	'name'		=> __('Dialog Messages', $this->plugin_meta['shortname']),
-								'type'	=> 'tab',
-								'desc'	=> __('Set message as per your need', $this->plugin_meta['shortname']),
-								'meat'	=> $meatDialog,
-								
-						),
 						
 		'pro-features'	=> array(	'name'		=> __('Need more? Get PRO', $this->plugin_meta['shortname']),
 				'type'	=> 'tab',

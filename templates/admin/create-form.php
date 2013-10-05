@@ -472,10 +472,13 @@ if (isset ( $_REQUEST ['form_id'] ) && $_REQUEST ['form_id'] != '') {
 	
 	//$nmcontact->pa ( $form_meta );
 }
+
+
+$url_cancel = $this -> nm_plugin_fix_request_uri(array('action'=>'','form_id'=>''));
+echo '<p><a class="button" href="'.$url_cancel.'">'.__('&laquo; Existing forms', $nmcontact->plugin_shortname).'</a></p>';
 ?>
 
-<input type="hidden" name="form_id"
-	value="<?php echo $_REQUEST['form_id']?>">
+<input type="hidden" name="form_id" value="<?php echo $_REQUEST['form_id']?>">
 <div id="nmcontact-form-generator">
 	<ul>
 		<li><a href="#formbox-1"><?php _e('Form Settings', $nmcontact -> plugin_meta['shortname'])?></a></li>
@@ -539,7 +542,7 @@ if (isset ( $_REQUEST ['form_id'] ) && $_REQUEST ['form_id'] != '') {
 				<td class="headings"><?php _e('Success Message', $nmcontact -> plugin_meta['shortname'])?></td>
 				<td><input type="text" name="success_message"
 					value="<?php echo $success_message?>" /> <br />
-					<p class="s-font"><?php _e('Define the message when there is an error on send of email.', $nmcontact -> plugin_meta['shortname'])?></p></td>
+					<p class="s-font"><?php _e('Define the message when form is submitted successfully.', $nmcontact -> plugin_meta['shortname'])?></p></td>
 			</tr>
 			<tr>
 				<td class="headings"><?php _e('Error Message', $nmcontact -> plugin_meta['shortname'])?></td>
@@ -696,6 +699,7 @@ function render_input_types($type, $name, $value = '', $options = '', $for = 'fr
 	$html_input = '';
 	
 	$disabled = ($for == 'pro') ? 'disabled="disabled"' : '';
+	stripslashes($value);
 	
 	switch ($type) {
 		

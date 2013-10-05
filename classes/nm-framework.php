@@ -341,10 +341,7 @@ class NM_Framwork_V1{
 		if($debug)
 			$this -> print_query(__FUNCTION__);
 
-		if($wpdb -> insert_id)
-			return true;
-		else
-			return false;
+		return $wpdb -> insert_id;
 	}
 
 

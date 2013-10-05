@@ -372,14 +372,14 @@ class NM_WP_ContactForm extends NM_Framwork_V1 {
 			$resp = array (
 					'message' => __ ( 'Form updated successfully', $this->plugin_meta ['shortname'] ),
 					'status' => 'success',
-					'form_id' => $res_id
+					'form_id' => $form_id
 			);
 		} else {
 
 			$resp = array (
 					'message' => __ ( 'Error while updating form, please try again', $this->plugin_meta ['shortname'] ),
 					'status' => 'failed',
-					'form_id' => ''
+					'form_id' => $form_id
 			);
 		}
 

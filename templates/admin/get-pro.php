@@ -22,8 +22,8 @@ $proFeatures .= '<p>';
 $proFeatures .= '<h2>'.__('Best Photo Editing Tool', $this->plugin_meta['shortname']).'</h2>';
 $proFeatures .= __('This plugin can be used as best Photo Editing Tool to allow your users to upload and Edit Photos online using world\'s best Photo Editor \'Aviary\'. There is an Add-on for this',$this->plugin_meta['shortname']);
 $proFeatures .= '<br><br><a class="button" target="_blank" href="http://www.aviary.com/">'.__('What is Aviary?',$this->plugin_meta['shortname']).'</a>';
-$proFeatures .= ' <a class="button-primary" href="">'.__('See Demo',$this->plugin_meta['shortname']).'</a>';
-$proFeatures .= ' <a class="button-primary" href="">'.__('Get Pro + Addon',$this->plugin_meta['shortname']).'</a>';
+$proFeatures .= ' <a class="button-primary" href="http://webcontact.wordpresspoets.com/">'.__('See Demo',$this->plugin_meta['shortname']).'</a>';
+$proFeatures .= ' <a class="button-primary" href="http://webcontact.wordpresspoets.com/demo-of-photo-editing/">'.__('See Photo Editing Add-on Demo',$this->plugin_meta['shortname']).'</a>';
 $proFeatures .= '</p>';
 
 
