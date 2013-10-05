@@ -81,6 +81,7 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 4. Finally, a front-end view of form with Awesome File Uploader
 5. Showing filled Form with an Uploaded File
 
+
 == Changelog ==
 
 = 1.0 =
@@ -94,6 +95,8 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 * Responsive/Fluid layout (now FREE)
 * Receive email with all titles and better layout
 * Radio type input added
+* Field detail can be added
+* Append `asterik symbol *` for required field
 
 
 == Upgrade notice ==
@@ -109,3 +112,5 @@ Better drag & drop plugin admin UI
 Responsive/Fluid layout (now FREE)
 Receive email with all titles and better layout
 Radio type input added
+Field detail can be added
+Append `asterik symbol *` for required field
