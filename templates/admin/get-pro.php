@@ -16,7 +16,7 @@ $proFeatures .= '<li>'.__('Set Max. and Min. Checked options for checkbox', $thi
 $proFeatures .= '<li>'.__('Add custom css for each form', $this->plugin_meta['shortname']).'</li>';
 $proFeatures .= '</ol>';
 
-$proFeatures .= '<br><a class="button-primary" href="">'.__('Get Pro',$this->plugin_meta['shortname']).'</a><br><br>';
+$proFeatures .= '<br><a class="button-primary" href="http://www.najeebmedia.com/n-media-website-contact-form-with-file-uploader/">'.__('Get Pro',$this->plugin_meta['shortname']).'</a><br><br>';
 
 $proFeatures .= '<p>';
 $proFeatures .= '<h2>'.__('Best Photo Editing Tool', $this->plugin_meta['shortname']).'</h2>';
