@@ -16,7 +16,6 @@ Version 1.3 has major updates/changes. Old form's data will not be shown, howeve
 
 == Description ==
 
-
 There are many Contact Form plugin already exists in WP repository. But This plugin is has Unique Feature that is AWESOME File uploader control. Users can submit files using best file uploader tool and other features:
 <ul>
 <li>Awesome Progressbar</li>
@@ -49,6 +48,10 @@ On top above Basic Features, this plugin has PRO version with more Awesome featu
 
 = Demo =
 [Demo of this plugin can be seen here](http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/)
+
+= Photo Editing Add-on =
+This plugin can be turned into best front-end online photo editing tool. see online demo and detail:
+[Photo Editing Demo](http://webcontact.wordpresspoets.com/demo-of-photo-editing/)
 
 == Installation ==
 
@@ -87,11 +90,10 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 * validation error fixed for 'Email' type field
 * better thumbs support for png and gif as well
 = 1.3 =
-* Better plugin admin UI
-* Receive email with all titles and better layout
+* Better drag & drop plugin admin UI
 * Responsive/Fluid layout (now FREE)
+* Receive email with all titles and better layout
 * Radio type input added
-
 
 
 == Upgrade notice ==
@@ -102,3 +104,8 @@ I am just born
 some files were missing in first release, it is fixed now
 validation error fixed for 'Email' type field
 better thumbs support for png and gif as well
+= 1.3 =
+Better drag & drop plugin admin UI
+Responsive/Fluid layout (now FREE)
+Receive email with all titles and better layout
+Radio type input added
