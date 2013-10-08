@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: website contact form, upload file, submit file, send file, attach file, photo editing
 Requires at least: 3.3
 Tested up to: 3.6.1
-Stable tag: 1.3
+Stable tag: 1.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -97,6 +97,8 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 * Radio type input added
 * Field detail can be added
 * Append `asterik symbol *` for required field
+= 1.3.1 =
+* Bug fixed while updating meta in backend
 
 
 == Upgrade notice ==
@@ -114,3 +116,5 @@ Receive email with all titles and better layout
 Radio type input added
 Field detail can be added
 Append `asterik symbol *` for required field
+= 1.3.1 =
+Bug fixed while updating meta in backend

@@ -332,7 +332,6 @@ class NM_WP_ContactForm extends NM_Framwork_V1 {
 				'success_message' 	=> stripslashes ( $success_message ),
 				'error_message' 	=> stripslashes ( $error_message ),
 				'send_file_as' 		=> $send_file_as,
-				'photo_editing'		=> $photo_editing,
 				'aviary_api_key'	=> trim($aviary_api_key),
 				'form_style'		=> $form_style,
 				'section_slides'	=> $section_slides,
