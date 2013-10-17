@@ -4,7 +4,7 @@
  Plugin Name: N-Media Website Contact Form with File Uploader
 Plugin URI: http://www.najeebmedia.com
 Description: This plugin is simple website contact form with Awesome File Uploader. Create Unlimited Forms using Meta Manager
-Version: 1.3.1
+Version: 1.3.2
 Author: Najeeb Ahmad
 Author URI: http://www.najeebmedia.com/
 */

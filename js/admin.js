@@ -93,7 +93,7 @@ jQuery(function($) {
 
 				}
 			});
-	$("ul, li").disableSelection();
+	//$("ul, li").disableSelection();
 
 	// ================== new meta form creator ===================
 
