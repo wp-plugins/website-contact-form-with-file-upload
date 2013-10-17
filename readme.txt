@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: website contact form, upload file, submit file, send file, attach file, photo editing
 Requires at least: 3.3
 Tested up to: 3.6.1
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -99,6 +99,8 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 * Append `asterik symbol *` for required field
 = 1.3.1 =
 * Bug fixed while updating meta in backend
+= 1.3.2 =
+* Bug fixed with Firefox while editing meta group
 
 
 == Upgrade notice ==
@@ -118,3 +120,5 @@ Field detail can be added
 Append `asterik symbol *` for required field
 = 1.3.1 =
 Bug fixed while updating meta in backend
+= 1.3.2 =
+Bug fixed with Firefox while editing meta group
