@@ -217,7 +217,7 @@ echo '<div id="nm-webcontact-box-'. $nmcontact->form_id .'" class="nm-webcontact
 				echo '<label for="f-meta-'. $opt.'"> <input type="radio"';
 				
 				echo 'value="'.$opt.'" id="f-meta-'. $opt.'"';
-				echo 'name="'.$name.'[]" '. $checked.'';
+				echo 'name="'.$name.'" '. $checked.'';
 				echo 'data-req="'.$meta['required'].'"';
 				echo 'data-message="'.stripslashes( $meta['error_message'] ).'">';
 				echo $output;

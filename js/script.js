@@ -131,29 +131,37 @@ function validate_data(form){
 			var input_control = jQuery('#'+meta['data_name']);
 			
 			if(meta['required'] === "on" && jQuery(input_control).val() === ''){
-				jQuery(input_control).parent().find('span.errors').html(meta['error_message']).css('color', 'red');
+				jQuery(input_control).closest('p').find('span.errors').html(meta['error_message']).css('color', 'red');
 				has_error = false;
 			}else{
-				jQuery(input_control).parent().find('span.errors').html('').css({'border' : '','padding' : '0'});
+				jQuery(input_control).closest('p').find('span.errors').html('').css({'border' : '','padding' : '0'});
 			}
 		}else if(type === 'checkbox'){
 			
 			if(meta['required'] === "on" && jQuery('input:checkbox[name="'+meta['data_name']+'[]"]:checked').length === 0){
 				
-				jQuery('input:checkbox[name="'+meta['data_name']+'[]"]').parent().parent().find('span.errors').html(meta['error_message']).css('color', 'red');
+				jQuery('input:checkbox[name="'+meta['data_name']+'[]"]').closest('p').find('span.errors').html(meta['error_message']).css('color', 'red');
 				has_error = false;
 			}else if(meta['min_checked'] != '' && jQuery('input:checkbox[name="'+meta['data_name']+'[]"]:checked').length < meta['min_checked']){
-				jQuery('input:checkbox[name="'+meta['data_name']+'[]"]').parent().parent().find('span.errors').html(meta['error_message']).css('color', 'red');
+				jQuery('input:checkbox[name="'+meta['data_name']+'[]"]').closest('p').find('span.errors').html(meta['error_message']).css('color', 'red');
 				has_error = false;
 			}else if(meta['max_checked'] != '' && jQuery('input:checkbox[name="'+meta['data_name']+'[]"]:checked').length > meta['max_checked']){
-				jQuery('input:checkbox[name="'+meta['data_name']+'[]"]').parent().parent().find('span.errors').html(meta['error_message']).css('color', 'red');
+				jQuery('input:checkbox[name="'+meta['data_name']+'[]"]').closest('p').find('span.errors').html(meta['error_message']).css('color', 'red');
 				has_error = false;
 			}else{
 				
-				jQuery('input:checkbox[name="'+meta['data_name']+'[]"]').parent().parent().find('span.errors').html('').css({'border' : '','padding' : '0'});
+				jQuery('input:checkbox[name="'+meta['data_name']+'[]"]').closest('p').find('span.errors').html('').css({'border' : '','padding' : '0'});
 				
 				}
-			}else if(type === 'file'){
+		}else if(type === 'radio'){
+				
+				if(meta['required'] === "on" && jQuery('input:radio[name="'+meta['data_name']+'"]:checked').length === 0){
+					jQuery('input:radio[name="'+meta['data_name']+'"]').closest('p').find('span.errors').html(meta['error_message']).css('color', 'red');
+					has_error = false;
+				}else{
+					jQuery('input:radio[name="'+meta['data_name']+'"]').closest('p').find('span.errors').html('').css({'border' : '','padding' : '0'});
+				}
+		}else if(type === 'file'){
 				var input_control = jQuery('#files_'+meta['data_name']);
 				if(meta['required'] === "on" && jQuery(input_control).val() === ''){
 					jQuery(input_control).parent().parent().parent().find('span.errors').html(meta['error_message']).css('color', 'red');
