@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: website contact form, upload file, submit file, send file, attach file, photo editing
 Requires at least: 3.3
 Tested up to: 3.9
-Stable tag: 1.3.3
+Stable tag: 1.3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -124,3 +124,5 @@ Append `asterik symbol *` for required field
 Bug fixed while updating meta in backend
 = 1.3.2 =
 Bug fixed with Firefox while editing meta group
+= 1.3.4 =
+Bug fixed related menu conflict with appearance menu
