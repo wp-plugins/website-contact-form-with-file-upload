@@ -126,3 +126,5 @@ Bug fixed while updating meta in backend
 Bug fixed with Firefox while editing meta group
 = 1.3.4 =
 Bug fixed related menu conflict with appearance menu
+= 1.4 =
+* SECURITY ALERT: This version has removed a BUG related to security. Remote invalid file types are NOT allowed
