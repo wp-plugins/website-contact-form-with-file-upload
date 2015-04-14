@@ -1,0 +1,44 @@
+.nm-webcontact-box span.show_required{
+	color: red;
+}
+
+.nm-webcontact-box span.show_description{
+font-size: 11px;
+color: #999;
+padding-left: 5px;
+}
+
+/* the uploader wrapper */
+.nm-uploader-area{
+	border: #ccc 1px dashed;
+	padding: 5px 0;	
+	width: 97.5%;
+}
+
+.nm-webcontact-box > p, .nm-webcontact-box > section > p{
+	float:left;
+}
+
+.nm-webcontact-box > p, .nm-webcontact-box > div, .nm-webcontact-box > section{
+	margin-bottom: 1.625em;
+}
+
+
+.webcontact-section-header{
+	text-align: center;
+	
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	
+	margin: 0 0 1.5em 0;
+}
+
+p.webcontact-save-button{
+	
+	margin: 10px auto;
+	text-align: center;
+}
+table#section_titles tr td{
+	text-align:center;
+	color: #ccc;
+}
