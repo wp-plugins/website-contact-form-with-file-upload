@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: website contact form, upload file, submit file, send file, attach file, photo editing
 Requires at least: 3.3
 Tested up to: 3.9
-Stable tag: 1.5
+Stable tag: 1.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -103,6 +103,8 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 * Bug fixed with Firefox while editing meta group
 = 1.3.3 =
 * a little issue with plugin url and menu is fixed.
+= 1.6 =
+* Wide Image library replaced with WP Image Editor for image processing.
 
 
 == Upgrade notice ==
