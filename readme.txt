@@ -2,9 +2,9 @@
 Contributors: nmedia
 Donate link: http://www.najeebmedia.com/donate/
 Tags: website contact form, upload file, submit file, send file, attach file, photo editing
-Requires at least: 3.3
-Tested up to: 3.9
-Stable tag: 1.6
+Requires at least: 3.5
+Tested up to: 4.2
+Stable tag: 1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -105,6 +105,10 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 * a little issue with plugin url and menu is fixed.
 = 1.6 =
 * Wide Image library replaced with WP Image Editor for image processing.
+
+= 1.7 =
+* Plugin now be translated into other langauges
+* French language also added.
 
 
 == Upgrade notice ==
