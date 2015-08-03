@@ -4,7 +4,7 @@ Donate link: http://www.najeebmedia.com/donate/
 Tags: website contact form, upload file, submit file, send file, attach file, photo editing
 Requires at least: 3.5
 Tested up to: 4.2
-Stable tag: 1.7
+Stable tag: 1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -109,6 +109,10 @@ http://webcontact.wordpresspoets.com/website-contact-form-with-file-upload-demo/
 = 1.7 =
 * Plugin now be translated into other langauges
 * French language also added.
+
+= 1.8 =
+* All warning and notices are removed.
+* Width field is replaced with Grid layout
 
 
 == Upgrade notice ==
