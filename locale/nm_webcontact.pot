@@ -1,0 +1,696 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: NM Webcontact\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: N-Media\n"
+"MIME-Version: 1.0\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ..\\\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/admin.class.php:141 classes/admin.class.php:147
+msgid " Settings"
+msgstr ""
+
+#: classes/admin.class.php:184
+msgid "Following files are uploaded:"
+msgstr ""
+
+#: classes/admin.class.php:204
+msgid "Download file"
+msgstr ""
+
+#: classes/admin.class.php:218
+msgid "N-Media Websit Contact Form Setting"
+msgstr ""
+
+#: classes/admin.class.php:219
+msgid "Here you can create and edit forms. These forms can be used on any pages/posts"
+msgstr ""
+
+#: classes/admin.class.php:225
+msgid "Add Form"
+msgstr ""
+
+#: classes/plugin.class.php:216
+msgid "Contact Forms"
+msgstr ""
+
+#: classes/plugin.class.php:217
+msgid "Contact Form"
+msgstr ""
+
+#: classes/plugin.class.php:292
+msgid "Form added successfully"
+msgstr ""
+
+#: classes/plugin.class.php:299
+msgid "Error while savign form, please try again"
+msgstr ""
+
+#: classes/plugin.class.php:372
+msgid "Form updated successfully"
+msgstr ""
+
+#: classes/plugin.class.php:379
+msgid "Error while updating form, please try again"
+msgstr ""
+
+#: classes/plugin.class.php:404
+msgid "All options are updated"
+msgstr ""
+
+#: classes/plugin.class.php:453
+msgid "Following message is being sent by User"
+msgstr ""
+
+#: classes/plugin.class.php:503
+msgid "Message sent successfully"
+msgstr ""
+
+#: classes/plugin.class.php:514
+msgid "Error: while seding Email"
+msgstr ""
+
+#: classes/plugin.class.php:545
+msgid "Error while creating directory"
+msgstr ""
+
+#: classes/plugin.class.php:557
+msgid "File type not valid - "
+msgstr ""
+
+#: classes/plugin.class.php:585
+msgid "Error while uploading file"
+msgstr ""
+
+#: classes/plugin.class.php:600
+msgid "File removed"
+msgstr ""
+
+#: classes/plugin.class.php:605
+msgid "Error while deleting file "
+msgstr ""
+
+#: classes/plugin.class.php:740
+msgid "Meta deleted successfully"
+msgstr ""
+
+#: config.php:36
+msgid "It is PRO"
+msgstr ""
+
+#: templates/admin/create-form.php:12 templates/admin/create-form.php:25
+#: templates/admin/create-form.php:78 templates/admin/create-form.php:130
+#: templates/admin/create-form.php:178 templates/admin/create-form.php:243
+#: templates/admin/create-form.php:295
+msgid "Title"
+msgstr ""
+
+#: templates/admin/create-form.php:13
+msgid "It will as section heading wrapped in h2"
+msgstr ""
+
+#: templates/admin/create-form.php:17 templates/admin/create-form.php:35
+#: templates/admin/create-form.php:88 templates/admin/create-form.php:140
+#: templates/admin/create-form.php:188 templates/admin/create-form.php:253
+#: templates/admin/create-form.php:305
+msgid "Description"
+msgstr ""
+
+#: templates/admin/create-form.php:18
+msgid "Type description, it will be diplay under section heading."
+msgstr ""
+
+#: templates/admin/create-form.php:26 templates/admin/create-form.php:79
+#: templates/admin/create-form.php:131 templates/admin/create-form.php:179
+#: templates/admin/create-form.php:244 templates/admin/create-form.php:296
+msgid "It will be shown as field label"
+msgstr ""
+
+#: templates/admin/create-form.php:30 templates/admin/create-form.php:65
+#: templates/admin/create-form.php:83 templates/admin/create-form.php:135
+#: templates/admin/create-form.php:183 templates/admin/create-form.php:248
+#: templates/admin/create-form.php:300
+msgid "Data name"
+msgstr ""
+
+#: templates/admin/create-form.php:31 templates/admin/create-form.php:66
+#: templates/admin/create-form.php:84 templates/admin/create-form.php:136
+#: templates/admin/create-form.php:184 templates/admin/create-form.php:249
+#: templates/admin/create-form.php:301
+msgid "REQUIRED: The identification name of this field, that you can insert into body email configuration. Note:Use only lowercase characters and underscores."
+msgstr ""
+
+#: templates/admin/create-form.php:36 templates/admin/create-form.php:89
+#: templates/admin/create-form.php:141 templates/admin/create-form.php:189
+#: templates/admin/create-form.php:254 templates/admin/create-form.php:306
+msgid "Small description, it will be diplay near name title."
+msgstr ""
+
+#: templates/admin/create-form.php:40 templates/admin/create-form.php:93
+#: templates/admin/create-form.php:145 templates/admin/create-form.php:193
+#: templates/admin/create-form.php:258 templates/admin/create-form.php:310
+msgid "Error message"
+msgstr ""
+
+#: templates/admin/create-form.php:41 templates/admin/create-form.php:94
+#: templates/admin/create-form.php:146 templates/admin/create-form.php:194
+#: templates/admin/create-form.php:259 templates/admin/create-form.php:311
+msgid "Insert the error message for validation."
+msgstr ""
+
+#: templates/admin/create-form.php:46 templates/admin/create-form.php:99
+#: templates/admin/create-form.php:151 templates/admin/create-form.php:204
+#: templates/admin/create-form.php:275 templates/admin/create-form.php:316
+msgid "Required"
+msgstr ""
+
+#: templates/admin/create-form.php:47 templates/admin/create-form.php:100
+#: templates/admin/create-form.php:152 templates/admin/create-form.php:205
+#: templates/admin/create-form.php:276 templates/admin/create-form.php:317
+msgid "Select this if it must be required."
+msgstr ""
+
+#: templates/admin/create-form.php:51 templates/admin/create-form.php:104
+#: templates/admin/create-form.php:156 templates/admin/create-form.php:209
+#: templates/admin/create-form.php:281 templates/admin/create-form.php:324
+msgid "Class"
+msgstr ""
+
+#: templates/admin/create-form.php:52 templates/admin/create-form.php:105
+#: templates/admin/create-form.php:157 templates/admin/create-form.php:210
+#: templates/admin/create-form.php:282 templates/admin/create-form.php:325
+msgid "Insert an additional class(es) (separateb by comma) for more personalization."
+msgstr ""
+
+#: templates/admin/create-form.php:56 templates/admin/create-form.php:109
+#: templates/admin/create-form.php:161 templates/admin/create-form.php:214
+#: templates/admin/create-form.php:286 templates/admin/create-form.php:330
+msgid "Width"
+msgstr ""
+
+#: templates/admin/create-form.php:57 templates/admin/create-form.php:110
+#: templates/admin/create-form.php:162 templates/admin/create-form.php:215
+#: templates/admin/create-form.php:287 templates/admin/create-form.php:331
+msgid "Type field width in % e.g: 50%"
+msgstr ""
+
+#: templates/admin/create-form.php:70
+msgid "Field value"
+msgstr ""
+
+#: templates/admin/create-form.php:71
+msgid "you can pre-set the value of this hidden input."
+msgstr ""
+
+#: templates/admin/create-form.php:114
+msgid "Date formats"
+msgstr ""
+
+#: templates/admin/create-form.php:115
+msgid "Select date format."
+msgstr ""
+
+#: templates/admin/create-form.php:167
+msgid "Send email"
+msgstr ""
+
+#: templates/admin/create-form.php:168
+msgid "Select this if you want user get this form."
+msgstr ""
+
+#: templates/admin/create-form.php:198 templates/admin/create-form.php:264
+msgid "Add options"
+msgstr ""
+
+#: templates/admin/create-form.php:199 templates/admin/create-form.php:265
+msgid "Type each option per line"
+msgstr ""
+
+#: templates/admin/create-form.php:219
+msgid "Checked option(s)"
+msgstr ""
+
+#: templates/admin/create-form.php:220
+msgid "Type option(s) name (given above) if you want already checked."
+msgstr ""
+
+#: templates/admin/create-form.php:225
+msgid "Min. Checked option(s)"
+msgstr ""
+
+#: templates/admin/create-form.php:226
+msgid "How many options can be checked by user e.g: 2. Leave blank for default."
+msgstr ""
+
+#: templates/admin/create-form.php:233
+msgid "Max. Checked option(s)"
+msgstr ""
+
+#: templates/admin/create-form.php:234
+msgid "How many options can be checked by user e.g: 3. Leave blank for default."
+msgstr ""
+
+#: templates/admin/create-form.php:269
+msgid "Selected option"
+msgstr ""
+
+#: templates/admin/create-form.php:270
+msgid "Type option name (given above) if you want already selected."
+msgstr ""
+
+#: templates/admin/create-form.php:336
+msgid "Button label"
+msgstr ""
+
+#: templates/admin/create-form.php:337
+msgid "Type button label e.g: Upload Photos"
+msgstr ""
+
+#: templates/admin/create-form.php:341
+msgid "Button width"
+msgstr ""
+
+#: templates/admin/create-form.php:342
+msgid "Type button width in px e.g: 150 (for 150px)"
+msgstr ""
+
+#: templates/admin/create-form.php:346
+msgid "Files allowed"
+msgstr ""
+
+#: templates/admin/create-form.php:347
+msgid "Type number of files allowed per upload by user, e.g: 3"
+msgstr ""
+
+#: templates/admin/create-form.php:352
+msgid "File types"
+msgstr ""
+
+#: templates/admin/create-form.php:353
+msgid "File types allowed seperated by comma, e.g: jpg,pdf,zip"
+msgstr ""
+
+#: templates/admin/create-form.php:358
+msgid "File size"
+msgstr ""
+
+#: templates/admin/create-form.php:359
+msgid "Type size in KB per file uploaded by user, e.g: 5000 (5 MB)"
+msgstr ""
+
+#: templates/admin/create-form.php:364
+msgid "Enable photo editing"
+msgstr ""
+
+#: templates/admin/create-form.php:365
+msgid "Allow users to edit photos by Aviary API, make sure that Aviary API Key is set in previous tab."
+msgstr ""
+
+#: templates/admin/create-form.php:371
+msgid "Editing Options"
+msgstr ""
+
+#: templates/admin/create-form.php:372
+msgid "Select editing options"
+msgstr ""
+
+#: templates/admin/create-form.php:400
+msgid "Text Input"
+msgstr ""
+
+#: templates/admin/create-form.php:401
+msgid "regular text input"
+msgstr ""
+
+#: templates/admin/create-form.php:405
+msgid "Email Input"
+msgstr ""
+
+#: templates/admin/create-form.php:406
+msgid "email input"
+msgstr ""
+
+#: templates/admin/create-form.php:410
+msgid "Checkbox"
+msgstr ""
+
+#: templates/admin/create-form.php:411
+msgid "checkbox options"
+msgstr ""
+
+#: templates/admin/create-form.php:415
+msgid "Select"
+msgstr ""
+
+#: templates/admin/create-form.php:416
+msgid "select options"
+msgstr ""
+
+#: templates/admin/create-form.php:420
+msgid "Textarea"
+msgstr ""
+
+#: templates/admin/create-form.php:421
+msgid "textrea for large input"
+msgstr ""
+
+#: templates/admin/create-form.php:425
+msgid "Radio buttons"
+msgstr ""
+
+#: templates/admin/create-form.php:426
+msgid "radio buttons"
+msgstr ""
+
+#: templates/admin/create-form.php:431
+msgid "File upload"
+msgstr ""
+
+#: templates/admin/create-form.php:432 templates/admin/create-form.php:445
+msgid "file uploader"
+msgstr ""
+
+#: templates/admin/create-form.php:437
+msgid "Date"
+msgstr ""
+
+#: templates/admin/create-form.php:438
+msgid "date"
+msgstr ""
+
+#: templates/admin/create-form.php:444
+msgid "Section (Heading)"
+msgstr ""
+
+#: templates/admin/create-form.php:478
+msgid "&laquo; Existing forms"
+msgstr ""
+
+#: templates/admin/create-form.php:484
+msgid "Form Settings"
+msgstr ""
+
+#: templates/admin/create-form.php:485
+msgid "Form Fields"
+msgstr ""
+
+#: templates/admin/create-form.php:487
+msgid "Save settings"
+msgstr ""
+
+#: templates/admin/create-form.php:497
+msgid "Form name"
+msgstr ""
+
+#: templates/admin/create-form.php:500
+msgid "For your reference"
+msgstr ""
+
+#: templates/admin/create-form.php:503
+msgid "Receiver(s)"
+msgstr ""
+
+#: templates/admin/create-form.php:506
+msgid "Define the emails used (separeted by comma) to receive emails."
+msgstr ""
+
+#: templates/admin/create-form.php:509
+msgid "Sender Email"
+msgstr ""
+
+#: templates/admin/create-form.php:512
+msgid "Define from what email send the message."
+msgstr ""
+
+#: templates/admin/create-form.php:515
+msgid "Sender Name"
+msgstr ""
+
+#: templates/admin/create-form.php:518
+msgid "Define the name of email that send the message."
+msgstr ""
+
+#: templates/admin/create-form.php:522
+msgid "Subject"
+msgstr ""
+
+#: templates/admin/create-form.php:525
+msgid "Define the subject of the email sent to you."
+msgstr ""
+
+#: templates/admin/create-form.php:529
+msgid "Submit Button Label"
+msgstr ""
+
+#: templates/admin/create-form.php:532
+msgid "Define the label of submit button."
+msgstr ""
+
+#: templates/admin/create-form.php:535
+msgid "Submit Button Class"
+msgstr ""
+
+#: templates/admin/create-form.php:538
+msgid "Define the class of submit button."
+msgstr ""
+
+#: templates/admin/create-form.php:542
+msgid "Success Message"
+msgstr ""
+
+#: templates/admin/create-form.php:545
+msgid "Define the message when form is submitted successfully."
+msgstr ""
+
+#: templates/admin/create-form.php:548
+msgid "Error Message"
+msgstr ""
+
+#: templates/admin/create-form.php:551
+msgid "Define the message when there is an error on send of email."
+msgstr ""
+
+#: templates/admin/create-form.php:554
+msgid "Receive file mode"
+msgstr ""
+
+#: templates/admin/create-form.php:558
+msgid "Send as Link (suggestion: if files sizes are big then use this)"
+msgstr ""
+
+#: templates/admin/create-form.php:562
+msgid "Send as Attachment (suggestion: if files sizes are normal)"
+msgstr ""
+
+#: templates/admin/create-form.php:564
+msgid "Select whether file uploaded by user will be recieved to admin as attachment or link"
+msgstr ""
+
+#: templates/admin/create-form.php:568
+msgid "Slide sections using jquery?"
+msgstr ""
+
+#: templates/admin/create-form.php:570
+msgid "Not all section will be shown at once, it add a nice sliding effect."
+msgstr ""
+
+#: templates/admin/create-form.php:577
+msgid "Aviary API Key (Photo Editing)"
+msgstr ""
+
+#: templates/admin/create-form.php:578
+msgid "Learn about Aviary"
+msgstr ""
+
+#: templates/admin/create-form.php:584
+msgid "Enter Aviary API Key."
+msgstr ""
+
+#: templates/admin/create-form.php:585
+msgid "You need to get your API key from Aviary to use this. It is free as long as you need paid features"
+msgstr ""
+
+#: templates/admin/create-form.php:588 templates/admin/get-pro.php:25
+msgid "See Demo"
+msgstr ""
+
+#: templates/admin/create-form.php:598
+msgid "Form styling/css"
+msgstr ""
+
+#: templates/admin/create-form.php:600
+msgid "Form styling/css."
+msgstr ""
+
+#: templates/admin/create-form.php:610
+msgid "select input type below and drag it on right side. Then set more options"
+msgstr ""
+
+#: templates/admin/create-form.php:639
+msgid "Drage form fields here"
+msgstr ""
+
+#: templates/admin/create-form.php:641
+msgid "Collapse all"
+msgstr ""
+
+#: templates/admin/create-form.php:643
+msgid "Expand all"
+msgstr ""
+
+#: templates/admin/create-form.php:661
+msgid "Are you sure?"
+msgstr ""
+
+#: templates/admin/create-form.php:665
+msgid "Are you sure to remove this input field?"
+msgstr ""
+
+#: templates/admin/existing-meta.php:9
+msgid "Existing Form Meta"
+msgstr ""
+
+#: templates/admin/existing-meta.php:16 templates/admin/existing-meta.php:24
+msgid "Name."
+msgstr ""
+
+#: templates/admin/existing-meta.php:17 templates/admin/existing-meta.php:25
+msgid "Meta."
+msgstr ""
+
+#: templates/admin/existing-meta.php:18
+msgid "Form."
+msgstr ""
+
+#: templates/admin/existing-meta.php:19 templates/admin/existing-meta.php:27
+msgid "Delete."
+msgstr ""
+
+#: templates/admin/existing-meta.php:26
+msgid "Shortcode."
+msgstr ""
+
+#: templates/admin/get-pro.php:7
+msgid "Get access to support forum and post your question instantly."
+msgstr ""
+
+#: templates/admin/get-pro.php:8
+msgid "Set upload file as Required"
+msgstr ""
+
+#: templates/admin/get-pro.php:9
+msgid "Allow multiple file upload"
+msgstr ""
+
+#: templates/admin/get-pro.php:10
+msgid "Save all enteries as Custom Post Type"
+msgstr ""
+
+#: templates/admin/get-pro.php:11
+msgid "Add unlimited receiver's email"
+msgstr ""
+
+#: templates/admin/get-pro.php:12
+msgid "Date picker field input"
+msgstr ""
+
+#: templates/admin/get-pro.php:13
+msgid "Sections can be placed to split long forms"
+msgstr ""
+
+#: templates/admin/get-pro.php:14
+msgid "Hidden field can be embedded into form with pre-set value"
+msgstr ""
+
+#: templates/admin/get-pro.php:15
+msgid "Set Max. and Min. Checked options for checkbox"
+msgstr ""
+
+#: templates/admin/get-pro.php:16
+msgid "Add custom css for each form"
+msgstr ""
+
+#: templates/admin/get-pro.php:19
+msgid "Get Pro"
+msgstr ""
+
+#: templates/admin/get-pro.php:22
+msgid "Best Photo Editing Tool"
+msgstr ""
+
+#: templates/admin/get-pro.php:23
+msgid "This plugin can be used as best Photo Editing Tool to allow your users to upload and Edit Photos online using world's best Photo Editor 'Aviary'. There is an Add-on for this"
+msgstr ""
+
+#: templates/admin/get-pro.php:24
+msgid "What is Aviary?"
+msgstr ""
+
+#: templates/admin/get-pro.php:26
+msgid "See Photo Editing Add-on Demo"
+msgstr ""
+
+#: templates/admin/options.php:3
+msgid "Images thumb size"
+msgstr ""
+
+#: templates/admin/options.php:4
+msgid "Enter integer value for thumb size for images"
+msgstr ""
+
+#: templates/admin/options.php:8
+msgid "e.g: <strong>100</strong>"
+msgstr ""
+
+#: templates/admin/options.php:10
+msgid "Redirect?"
+msgstr ""
+
+#: templates/admin/options.php:11
+msgid "Type redirect url after form submitted, leave blank for alert on same page"
+msgstr ""
+
+#: templates/admin/options.php:17
+msgid "File type not supported message"
+msgstr ""
+
+#: templates/admin/options.php:18
+msgid "This message will be shown invalid file type is selected"
+msgstr ""
+
+#: templates/admin/options.php:32
+msgid "Basic Setting"
+msgstr ""
+
+#: templates/admin/options.php:34
+msgid "Set options as per your need"
+msgstr ""
+
+#: templates/admin/options.php:39
+msgid "Need more? Get PRO"
+msgstr ""
+
+#: templates/admin/options.php:41
+msgid "Following features are only available in PRO version"
+msgstr ""
+
+#: templates/admin/settings.php:195
+msgid "Setting settings"
+msgstr ""
+
+#: templates/render.email.php:157
+msgid "File(s) are attached"
+msgstr ""
+
+#: templates/render.input.php:186
+msgid "Select option"
+msgstr ""
